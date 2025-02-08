@@ -48,6 +48,7 @@
 .nav-item:hover a {
     background-color: #bdbbbb;
     border-radius: 5%;
+    
 }
 
 .nav-item:hover .dropdown a {
@@ -55,6 +56,7 @@
     text-align: left;
     margin-left: 5px;
     color: black;
+    
 }
 
 .dropdown {
