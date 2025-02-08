@@ -12,6 +12,7 @@
     border: 1px solid darkblue;
     text-align: center;
 }
+
 .item img {
     width: 100px;
     height: 100px;
@@ -20,15 +21,51 @@
 }
 
 .nav-item {
-        flex-direction: row;
-        background-color: #333;
-        color: #ffffff;
-        text-align: center;
-        padding: 14px;
-        font-size: 17px;
+    text-align: center;
+    position: relative;
 }
 
-.nav-item a.hover {
-    background-color: #ddd;
+.navbar-container {
+    display: flex;
+    background-color: #333;
+    flex-direction: row;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-item a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 30px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-item:hover a {
+    background-color: #bdbbbb;
+    border-radius: 5%;
+}
+
+.nav-item:hover .dropdown a {
+    background-color: white;
+    text-align: left;
+    margin-left: 5px;
     color: black;
+}
+
+.dropdown {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    text-align: left;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+    margin-top: 10px;
 }
